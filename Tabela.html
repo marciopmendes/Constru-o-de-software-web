@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabela Periódica</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="script.js"></script>
+</head>
+<body>
+  
+  <div class="grid-container">
+    <div class="grid-legenda">
+      <div class="leg1">Metais Alcalinos</div>
+      <div class="leg2">Metais Alcalino-Terrosos</div>
+      <div class="leg3">Metais de transição</div>
+      <div class="leg4">Semi-metais</div>
+      <div class="leg5 gridr1 gridc2">Não-metais</div>
+      <div class="leg6">Halogênios</div>
+      <div class="leg7">Gases nobres</div>
+    </div>
+    <div class="gridc1 gridr1">
+      <button onclick="showInfo(elementos,0);" class="btn naometais">1<br><div class="sym">H</div>Hidrogênio<br>1,0080</button>
+    </div>
+    <div class="gridc18 gridr1">
+      <button onclick="showInfo(elementos,1);" class="btn nobre">2<br><div class="sym">He</div>Hélio<br>4,0026</button>
+    </div>
+    <div class="gridc1 gridr2">
+      <button onclick="showInfo(elementos,2);" class="btn alc">3<br><div class="sym">Li</div>Lítio<br>6,9400</button>
+    </div>
+    <div class="gridc2 gridr2">
+      <button onclick="showInfo(elementos,3);" class="btn alct">4<br><div class="sym">Be</div>Berílio<br>9,0122</button>
+    </div>
+    <div class="gridc13 gridr2">
+      <button onclick="showInfo(elementos,4);" class="btn smet">5<br><div class="sym">B</div>Boro<br>10,810</button>
+    </div>
+    <div class="gridc14 gridr2">
+      <button onclick="showInfo(elementos,5);" class="btn naometais">6<br><div class="sym">C</div>Carbono<br>12,011</button>
+    </div>
+    <div class="gridc15 gridr2">
+      <button onclick="showInfo(elementos,6);" class="btn naometais">7<br><div class="sym">N</div>Nitrogênio<br>14,007</button>
+    </div>
+    <div class="gridc16 gridr2">
+      <button onclick="showInfo(elementos,7);" class="btn naometais">8<br><div class="sym">O</div>Oxigênio<br>15,999</button>
+    </div>
+    <div class="gridc17 gridr2">
+      <button onclick="showInfo(elementos,8);" class="btn halo">9<br><div class="sym">F</div>Flúor<br>18,998</button>
+    </div>
+    <div class="gridc18 gridr2">
+      <button onclick="showInfo(elementos,9);" class="btn nobre">10<br><div class="sym">Ne</div>Neônio<br>20,180</button>
+    </div>
+    <div class="gridc1 gridr3">
+      <button onclick="showInfo(elementos,10);" class="btn alc">11<br><div class="sym">Na</div>Sódio<br>22,990</button>
+    </div>
+    <div class="gridc2 gridr3">
+      <button onclick="showInfo(elementos,11);" class="btn alct">12<br><div class="sym">Mg</div>Magnésio<br>24,305</button>
+    </div>
+    <div class="gridc13 gridr3">
+      <button onclick="showInfo(elementos,12);" class="btn">13<br><div class="sym">Al</div>Alumínio<br>26,982</button>
+    </div>
+    <div class="gridc14 gridr3">
+      <button onclick="showInfo(elementos,13);" class="btn smet">14<br><div class="sym">Si</div>Silício<br>28,085</button>
+    </div>
+    <div class="gridc15 gridr3">
+      <button onclick="showInfo(elementos,14);" class="btn naometais">15<br><div class="sym">P</div>Fósforo<br>30,974</button>
+    </div>
+    <div class="gridc16 gridr3">
+      <button onclick="showInfo(elementos,15);" class="btn naometais">16<br><div class="sym">S</div>Enxofre<br>32,060</button>
+    </div>
+    <div class="gridc17 gridr3">
+      <button onclick="showInfo(elementos,16);" class="btn halo">17<br><div class="sym">Cl</div>Cloro<br>35,450</button>
+    </div>
+    <div class="gridc18 gridr3">
+      <button onclick="showInfo(elementos,17);" class="btn nobre">18<br><div class="sym">Ar</div>Argônio<br>39,950</button>
+    </div>
+    <div class="gridc1 gridr4">
+      <button onclick="showInfo(elementos,18);" class="btn alc">19<br><div class="sym">K</div>Potássio<br>39,098</button>
+    </div>
+    <div class="gridc2 gridr4">
+      <button onclick="showInfo(elementos,19);" class="btn alct">20<br><div class="sym">Ca</div>Cálcio<br>40,078</button>
+    </div>
+    <div class="gridc3 gridr4">
+      <button onclick="showInfo(elementos,20);" class="btn mtran">21<br><div class="sym">Sc</div>Escândio<br>44,956</button>
+    </div>
+    <div class="gridc4 gridr4">
+      <button onclick="showInfo(elementos,21);" class="btn mtran">22<br><div class="sym">Ti</div>Titânio<br>47,867</button>
+    </div>
+    <div class="gridc5 gridr4">
+      <button onclick="showInfo(elementos,22);" class="btn mtran">23<br><div class="sym">V</div>Vanádio<br>50,942</button>
+    </div>
+    <div class="gridc6 gridr4">
+      <button onclick="showInfo(elementos,23);" class="btn mtran">24<br><div class="sym">Cr</div>Crômio<br>51,996</button>
+    </div>
+    <div class="gridc7 gridr4">
+      <button onclick="showInfo(elementos,24);" class="btn mtran">25<br><div class="sym">Mn</div>Manganês<br>54,938</button>
+    </div>
+    <div class="gridc8 gridr4">
+      <button onclick="showInfo(elementos,25);" class="btn mtran">26<br><div class="sym">Fe</div>Ferro<br>55,845</button>
+    </div>
+    <div class="gridc9 gridr4">
+      <button onclick="showInfo(elementos,26);" class="btn mtran">27<br><div class="sym">Co</div>Cobalto<br>58,933</button>
+    </div>
+    <div class="gridc10 gridr4">
+      <button onclick="showInfo(elementos,27);" class="btn mtran">28<br><div class="sym">Ni</div>Níquel<br>58,693</button>
+    </div>
+    <div class="gridc11 gridr4">
+      <button onclick="showInfo(elementos,28);" class="btn mtran">29<br><div class="sym">Cu</div>Cobre<br>63,546</button>
+    </div>
+    <div class="gridc12 gridr4">
+      <button onclick="showInfo(elementos,29);" class="btn mtran">30<br><div class="sym">Zn</div>Zinco<br>65,380</button>
+    </div>
+    <div class="gridc13 gridr4">
+      <button onclick="showInfo(elementos,30);" class="btn">31<br><div class="sym">Ga</div>Gálio<br>69,723</button>
+    </div>
+    <div class="gridc14 gridr4">
+      <button onclick="showInfo(elementos,31);" class="btn smet">32<br><div class="sym">Ge</div>Germânio<br>72,630</button>
+    </div>
+    <div class="gridc15 gridr4">
+      <button onclick="showInfo(elementos,32);" class="btn smet">33<br><div class="sym">As</div>Arsênio<br>74,922</button>
+    </div>
+    <div class="gridc16 gridr4">
+      <button onclick="showInfo(elementos,33);" class="btn naometais">34<br><div class="sym">Se</div>Selênio<br>78,971</button>
+    </div>
+    <div class="gridc17 gridr4">
+      <button onclick="showInfo(elementos,34);" class="btn halo">35<br><div class="sym">Br</div>Bromo<br>79,904</button>
+    </div>
+    <div class="gridc18 gridr4">
+      <button onclick="showInfo(elementos,35);" class="btn nobre">36<br><div class="sym">Kr</div>Criptônio<br>83,798</button>
+    </div>
+    <div class="gridc1 gridr5">
+      <button onclick="showInfo(elementos,36);" class="btn alc">37<br><div class="sym">Rb</div>Rubídio<br>85,468</button>
+    </div>
+    <div class="gridc2 gridr5">
+      <button onclick="showInfo(elementos,37);" class="btn alct">38<br><div class="sym">Sr</div>Estrôncio<br>87,620</button>
+    </div>
+    <div class="gridc3 gridr5">
+      <button onclick="showInfo(elementos,38);" class="btn mtran">39<br><div class="sym">Y</div>Ítrio<br>88,906</button>
+    </div>
+    <div class="gridc4 gridr5">
+      <button onclick="showInfo(elementos,39);" class="btn mtran">40<br><div class="sym">Zr</div>Zircônio<br>91,224</button>
+    </div>
+    <div class="gridc5 gridr5">
+      <button onclick="showInfo(elementos,40);" class="btn mtran">41<br><div class="sym">Nb</div>Nióbio<br>92,906</button>
+    </div>
+    <div class="gridc6 gridr5">
+      <button onclick="showInfo(elementos,41);" class="btn mtran">42<br><div class="sym">Mo</div>Molibdênio<br>95,950</button>
+    </div>
+    <div class="gridc7 gridr5">
+      <button onclick="showInfo(elementos,42);" class="btn mtran">43<br><div class="sym">Tc</div>Tecnécio<br>*</button>
+    </div>
+    <div class="gridc8 gridr5">
+      <button onclick="showInfo(elementos,43);" class="btn mtran">44<br><div class="sym">Ru</div>Rutênio<br>101,07</button>
+    </div>
+    <div class="gridc9 gridr5">
+      <button onclick="showInfo(elementos,44);" class="btn mtran">45<br><div class="sym">Rh</div>Ródio<br>102,91</button>
+    </div>
+    <div class="gridc10 gridr5">
+      <button onclick="showInfo(elementos,45);" class="btn mtran">46<br><div class="sym">Pd</div>Paládio<br>106,42</button>
+    </div>
+    <div class="gridc11 gridr5">
+      <button onclick="showInfo(elementos,46);" class="btn mtran">47<br><div class="sym">Ag</div>Prata<br>107,87</button>
+    </div>
+    <div class="gridc12 gridr5">
+      <button onclick="showInfo(elementos,47);" class="btn mtran">48<br><div class="sym">Cd</div>Cádmio<br>112,41</button>
+    </div>
+    <div class="gridc13 gridr5">
+      <button onclick="showInfo(elementos,48);" class="btn">49<br><div class="sym">In</div>Índio<br>114,82</button>
+    </div>
+    <div class="gridc14 gridr5">
+      <button onclick="showInfo(elementos,49);" class="btn">50<br><div class="sym">Sn</div>Estanho<br>118,71</button>
+    </div>
+    <div class="gridc15 gridr5">
+      <button onclick="showInfo(elementos,50);" class="btn smet">51<br><div class="sym">Sb</div>Antimônio<br>121,76</button>
+    </div>
+    <div class="gridc16 gridr5">
+      <button onclick="showInfo(elementos,51);" class="btn smet">52<br><div class="sym">Te</div>Telúrio<br>127,60</button>
+    </div>
+    <div class="gridc17 gridr5">
+      <button onclick="showInfo(elementos,52);" class="btn halo">53<br><div class="sym">I</div>Iodo<br>126,90</button>
+    </div>
+    <div class="gridc18 gridr5">
+      <button onclick="showInfo(elementos,53);" class="btn nobre">54<br><div class="sym">Xe</div>Xenônio<br>131,29</button>
+    </div>
+    <div class="gridc1 gridr6">
+      <button onclick="showInfo(elementos,54);" class="btn alc">55<br><div class="sym">Cs</div>Césio<br>132,91</button>
+    </div>
+    <div class="gridc2 gridr6">
+      <button onclick="showInfo(elementos,55);" class="btn alct">56<br><div class="sym">Ba</div>Bário<br>137,33</button>
+    </div>
+    <div class="gridc3 gridr6">
+      <button class="btn lant"><br><div class="sym">57-71</div>Lantanídeos<br></button>
+    </div>
+    <div class="gridc4 gridr6">
+      <button onclick="showInfo(elementos,56);" class="btn mtran">72<br><div class="sym">Hf</div>Háfnio<br>178,49</button>
+    </div>
+    <div class="gridc5 gridr6">
+      <button onclick="showInfo(elementos,57);" class="btn mtran">73<br><div class="sym">Ta</div>Tântalo<br>180,95</button>
+    </div>
+    <div class="gridc6 gridr6">
+      <button onclick="showInfo(elementos,58);" class="btn mtran">74<br><div class="sym">W</div>Tungstênio<br>183,84</button>
+    </div>
+    <div class="gridc7 gridr6">
+      <button onclick="showInfo(elementos,59);" class="btn mtran">75<br><div class="sym">Re</div>Rênio<br>186,21</button>
+    </div>
+    <div class="gridc8 gridr6">
+      <button onclick="showInfo(elementos,60);" class="btn mtran">76<br><div class="sym">Os</div>Ósmio<br>190,23</button>
+    </div>
+    <div class="gridc9 gridr6">
+      <button onclick="showInfo(elementos,61);" class="btn mtran">77<br><div class="sym">Ir</div>Irídio<br>192,22</button>
+    </div>
+    <div class="gridc10 gridr6">
+      <button onclick="showInfo(elementos,62);" class="btn mtran">78<br><div class="sym">Pt</div>Platina<br>195,08</button>
+    </div>
+    <div class="gridc11 gridr6">
+      <button onclick="showInfo(elementos,63);" class="btn mtran">79<br><div class="sym">Au</div>Ouro<br>196,97</button>
+    </div>
+    <div class="gridc12 gridr6">
+      <button onclick="showInfo(elementos,64);" class="btn mtran">80<br><div class="sym">Hg</div>Mercúrio<br>200,59</button>
+    </div>
+    <div class="gridc13 gridr6">
+      <button onclick="showInfo(elementos,65);" class="btn">81<br><div class="sym">Tl</div>Tálio<br>204,38</button>
+    </div>
+    <div class="gridc14 gridr6">
+      <button onclick="showInfo(elementos,66);" class="btn">82<br><div class="sym">Pb</div>Chumbo<br>207,20</button>
+    </div>
+    <div class="gridc15 gridr6">
+      <button onclick="showInfo(elementos,67);" class="btn">83<br><div class="sym">Bi</div>Bismuto<br>208,98</button>
+    </div>
+    <div class="gridc16 gridr6">
+      <button onclick="showInfo(elementos,68);" class="btn smet">84<br><div class="sym">Po</div>Polônio<br>*</button>
+    </div>
+    <div class="gridc17 gridr6">
+      <button onclick="showInfo(elementos,69);" class="btn halo">85<br><div class="sym">At</div>Astato<br>*</button>
+    </div>
+    <div class="gridc18 gridr6">
+      <button onclick="showInfo(elementos,70);" class="btn nobre">86<br><div class="sym">Rn</div>Radônio<br>*</button>
+    </div>
+    <div class="gridc1 gridr7">
+      <button onclick="showInfo(elementos,71);" class="btn alc">87<br><div class="sym">Fr</div>Frâncio<br>*</button>
+    </div>
+    <div class="gridc2 gridr7">
+      <button onclick="showInfo(elementos,72);" class="btn alct">88<br><div class="sym">Ra</div>Rádio<br>*</button>
+    </div>
+    <div class="gridc3 gridr7">
+      <button class="btn act"><br><div class="sym">89-103</div>Actinídeos<br></button>
+    </div>
+    <div class="gridc4 gridr7">
+      <button onclick="showInfo(elementos,73);" class="btn mtran">104<br><div class="sym">Rf</div>Rutherfórdio<br>*</button>
+    </div>
+    <div class="gridc5 gridr7">
+      <button onclick="showInfo(elementos,74);" class="btn mtran">105<br><div class="sym">Db</div>Dúbnio<br>*</button>
+    </div>
+    <div class="gridc6 gridr7">
+      <button onclick="showInfo(elementos,75);" class="btn mtran">106<br><div class="sym">Sg</div>Seabórgio<br>*</button>
+    </div>
+    <div class="gridc7 gridr7">
+      <button onclick="showInfo(elementos,76);" class="btn mtran">107<br><div class="sym">Bh</div>Bóhrio<br>*</button>
+    </div>
+    <div class="gridc8 gridr7">
+      <button onclick="showInfo(elementos,77);" class="btn mtran">108<br><div class="sym">Hs</div>Hássio<br>*</button>
+    </div>
+    <div class="gridc9 gridr7">
+      <button onclick="showInfo(elementos,78);" class="btn mtran">109<br><div class="sym">Mt</div>Meitnério<br>*</button>
+    </div>
+    <div class="gridc10 gridr7">
+      <button onclick="showInfo(elementos,79);" class="btn mtran">110<br><div class="sym">Ds</div>Darmstádtio<br>*</button>
+    </div>
+    <div class="gridc11 gridr7">
+      <button onclick="showInfo(elementos,80);" class="btn mtran">111<br><div class="sym">Rg</div>Roentgênio<br>*</button>
+    </div>
+    <div class="gridc12 gridr7">
+      <button onclick="showInfo(elementos,81);" class="btn mtran">112<br><div class="sym">Cn</div>Copernício<br>*</button>
+    </div>
+    <div class="gridc13 gridr7">
+      <button onclick="showInfo(elementos,82);" class="btn">113<br><div class="sym">Nh</div>Nihônio<br>*</button>
+    </div>
+    <div class="gridc14 gridr7">
+      <button onclick="showInfo(elementos,83);" class="btn">114<br><div class="sym">Fl</div>Fleróvio<br>*</button>
+    </div>
+    <div class="gridc15 gridr7">
+      <button onclick="showInfo(elementos,84);" class="btn">115<br><div class="sym">Mc</div>Moscóvio<br>*</button>
+    </div>
+    <div class="gridc16 gridr7">
+      <button onclick="showInfo(elementos,85);" class="btn">116<br><div class="sym">Lv</div>Livermório<br>*</button>
+    </div>
+    <div class="gridc17 gridr7">
+      <button onclick="showInfo(elementos,86);" class="btn halo">117<br><div class="sym">Ts</div>Tennesso<br>*</button>
+    </div>
+    <div class="gridc18 gridr7">
+      <button onclick="showInfo(elementos,87);" class="btn nobre">118<br><div class="sym">Og</div>Oganessônio<br>*</button>
+    </div>
+  </div>
+
+
+  <div class="grid-lant">
+    <div class="gridc1">
+    <button onclick="showInfo(elementos,88);" class="btn lant">57<br><div class="sym">La</div>Lantânio<br>138,91</button>
+    </div>
+    <div class="gridc2">
+        <button onclick="showInfo(elementos,89);" class="btn lant">58<br><div class="sym">Ce</div>Cério<br>140,12</button>
+    </div>
+    <div class="gridc3">
+        <button onclick="showInfo(elementos,90);" class="btn lant">59<br><div class="sym">Pr</div>Praseodímio<br>140,91</button>
+    </div>
+    <div class="gridc4">
+      <button onclick="showInfo(elementos,91);" class="btn lant">60<br><div class="sym">Nd</div>Neodímio<br>144,24</button>
+    </div>
+    <div class="gridc5">
+      <button onclick="showInfo(elementos,92);" class="btn lant">61<br><div class="sym">Pm</div>Promécio<br>*</button>
+    </div>
+    <div class="gridc6">
+      <button onclick="showInfo(elementos,93);" class="btn lant">62<br><div class="sym">Sm</div>Samário<br>150,36</button>
+    </div>
+    <div class="gridc7">
+      <button onclick="showInfo(elementos,94);" class="btn lant">63<br><div class="sym">Eu</div>Európio<br>151,96</button>
+    </div>
+    <div class="gridc8">
+      <button onclick="showInfo(elementos,95);" class="btn lant">64<br><div class="sym">Gd</div>Gadolínio<br>157,25</button>
+    </div>
+    <div class="gridc9">
+      <button onclick="showInfo(elementos,96);" class="btn lant">65<br><div class="sym">Tb</div>Térbio<br>158,93</button>
+    </div>
+    <div class="gridc10">
+      <button onclick="showInfo(elementos,97);" class="btn lant">66<br><div class="sym">Dy</div>Disprósio<br>162,50</button>
+    </div>
+    <div class="gridc11">
+      <button onclick="showInfo(elementos,98);" class="btn lant">67<br><div class="sym">Ho</div>Hólmio<br>164,93</button>
+    </div>
+    <div class="gridc12">
+      <button onclick="showInfo(elementos,99);" class="btn lant">68<br><div class="sym">Er</div>Érbio<br>167,26</button>
+    </div>
+    <div class="gridc13">
+      <button onclick="showInfo(elementos,100);" class="btn lant">69<br><div class="sym">Tm</div>Túlio<br>168,93</button>
+    </div>
+    <div class="gridc14">
+      <button onclick="showInfo(elementos,101);" class="btn lant">70<br><div class="sym">Yb</div>Itérbio<br>173,05</button>
+    </div>
+    <div class="gridc15">
+      <button onclick="showInfo(elementos,102);" class="btn lant">71<br><div class="sym">Lu</div>Lutércio<br>174,97</button>
+    </div>
+  </div>
+
+
+  <div class="grid-act">
+    <div class="gridc1">
+      <button onclick="showInfo(elementos,103);" class="btn act">89<br><div class="sym">Ac</div>Actinío<br>*</button>
+    </div>
+    <div class="gridc2">
+      <button onclick="showInfo(elementos,104);" class="btn act">90<br><div class="sym">Th</div>Tório<br>232,04</button>
+    </div>
+    <div class="gridc3">
+      <button onclick="showInfo(elementos,105);" class="btn act">91<br><div class="sym">Pa</div>Protactínio<br>231,04</button>
+    </div>
+    <div class="gridc4">
+      <button onclick="showInfo(elementos,106);" class="btn act">92<br><div class="sym">U</div>Urânio<br>238,03</button>
+    </div>
+    <div class="gridc5">
+      <button onclick="showInfo(elementos,107);" class="btn act">93<br><div class="sym">Np</div>Neptúnio<br>*</button>
+    </div>
+    <div class="gridc6">
+      <button onclick="showInfo(elementos,108);" class="btn act">94<br><div class="sym">Pu</div>Plutônio<br>*</button>
+    </div>
+    <div class="gridc7">
+      <button onclick="showInfo(elementos,109);" class="btn act">95<br><div class="sym">Am</div>Amerício<br>*</button>
+    </div>
+    <div class="gridc8">
+      <button onclick="showInfo(elementos,110);" class="btn act">96<br><div class="sym">Cm</div>Cúrio<br>*</button>
+    </div>
+    <div class="gridc9">
+      <button onclick="showInfo(elementos,111);" class="btn act">97<br><div class="sym">Bk</div>Berquélio<br>*</button>
+    </div>
+    <div class="gridc10">
+      <button onclick="showInfo(elementos,112);" class="btn act">98<br><div class="sym">Cf</div>Califórnio<br>*</button>
+    </div>
+    <div class="gridc11">
+      <button onclick="showInfo(elementos,113);" class="btn act">99<br><div class="sym">Es</div>Einstênio<br>*</button>
+    </div>
+    <div class="gridc12">
+      <button onclick="showInfo(elementos,114);" class="btn act">100<br><div class="sym">Fm</div>Férmio<br>*</button>
+    </div>
+    <div class="gridc13">
+      <button onclick="showInfo(elementos,115);" class="btn act">101<br><div class="sym">Md</div>Mendelévio<br>*</button>
+    </div>
+    <div class="gridc14">
+      <button onclick="showInfo(elementos,116);" class="btn act">102<br><div class="sym">No</div>Nobélio<br>*</button>
+    </div>
+    <div class="gridc15">
+      <button onclick="showInfo(elementos,117);" class="btn act">103<br><div class="sym">Lr</div>Laurêncio<br>*</button>
+    </div>
+  </div>
+  <br><hr>
+  
+  <Button class="navbtn" onclick="document.location='pauling.html'">Clique aqui para visualizar o diagrama de Pauling</Button>
+
+  
+</body>
+</html>
+
+
+
