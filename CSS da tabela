@@ -1,0 +1,200 @@
+.btn{
+  width: 100px;
+  height: 100px;
+  margin: 2px;
+  border-color: black;
+}
+
+.pauling {
+  background-image: url("https://s3-sa-east-1.amazonaws.com/manual-do-enem-test/7dd9b09d2c5d4195bf5f9ad2de472f1b-Imagem1.png");
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.navbtn {
+  background-color: lightgreen;
+}
+
+.sym{
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.alc{
+  background-color: #D7DF01;
+}
+
+.alct{
+  background-color: #868A08;
+}
+
+.mtran{
+  background-color: #FE2E2E
+}
+
+.smet{
+  background-color: #AC58FA
+}
+.naometais{
+  background-color: #2E9AFE;
+}
+
+.halo{
+  background-color: seagreen;
+}
+
+.nobre{
+  background-color: orange;
+}
+
+.lant{
+  background-color: #BDBDBD;
+}
+
+.act{
+  background-color: #585858;
+}
+.grid-container{
+  display: grid;
+  grid-template-column: repeat (18, 100px);
+  grid-template-rows: repeat (7, 100px);
+  grid-gap: 0px;
+}
+
+.grid-lant{
+  display: grid;
+  grid-template-column: repeat (15, 100px);
+  grid-template-row: 100px;
+  margin: 40px 0px 0px 210px;
+}
+
+.grid-act{
+  display: grid;
+  grid-template-column: repeat (15, 100px);
+  grid-template-row: 100px;
+  margin: 5px 0px 0px 210px;
+}
+
+.grid-legenda{
+  display: grid;
+  grid-area: 2 / 6 / 3 / 11;
+  background-color: white;
+  grid-gap: 0px;
+  border-radius: 1;
+  border-color: #585858;
+  border-style: solid;
+}
+
+.leg1{
+  color: #D7DF01;
+  font-weight: bold;
+}
+
+.leg2{
+  color: #868A08;
+  font-weight: bold;
+}
+
+.leg3{
+  color: #FE2E2E;
+  font-weight: bold;
+}
+
+.leg4{
+  color: #AC58FA;
+  font-weight: bold;
+}
+
+.leg5{
+  color: #2E9AFE;
+  font-weight: bold;
+}
+
+.leg6{
+  color: seagreen;
+  font-weight: bold;
+}
+
+.leg7{
+  color: orange;
+  font-weight: bold;
+}
+.gridc1{
+  grid-column: 1/2;
+}
+.gridc2{
+  grid-column: 2/3;
+}
+.gridc3{
+  grid-column: 3/4;
+}
+.gridc4{
+  grid-column: 4/5;
+}
+.gridc5{
+  grid-column: 5/6;
+}
+.gridc6{
+  grid-column: 6/7;
+}
+.gridc7{
+  grid-column: 7/8;
+}
+.gridc8{
+  grid-column: 8/9;
+}
+.gridc9{
+  grid-column: 9/10;
+}
+.gridc10{
+  grid-column: 10/11;
+}
+.gridc11{
+  grid-column: 11/12;
+}
+.gridc12{
+  grid-column: 12/13;
+}
+.gridc13{
+  grid-column: 13/14;
+}
+.gridc14{
+  grid-column: 14/15;
+}
+.gridc15{
+  grid-column: 15/16;
+}
+.gridc16{
+  grid-column: 16/17;
+}
+.gridc17{
+  grid-column: 17/18;
+}
+.gridc18{
+  grid-column: 18/19;
+}
+
+.gridr1{
+  grid-row: 1/2;
+}
+.gridr2{
+  grid-row: 2/3;
+}
+.gridr3{
+  grid-row: 3/4;
+}
+.gridr4{
+  grid-row: 4/5;
+}
+.gridr5{
+  grid-row: 5/6;
+}
+.gridr6{
+  grid-row: 6/7;
+}
+.gridr7{
+  grid-row: 7;
+}
+
+
